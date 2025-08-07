@@ -1,5 +1,5 @@
 module uart_tx
-#(parameter CLKS_PER_BIT = 87)
+	#(parameter CLKS_PER_BIT = 868)
 (
 input i_clk,
 input i_Tx_DV,
@@ -17,7 +17,7 @@ parameter s_TX_STOP_BIT = 3'b011;
 parameter s_CLEANUP = 3'b100;
 
 
-reg[7:0] r_Clock_Count = 0;
+	reg[9:0] r_Clock_Count = 0;
 reg[7:0] r_Tx_Data = 0;
 reg[2:0] r_Bit_Index = 0;
 reg[2:0] r_SM_Main = 0;

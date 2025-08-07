@@ -16,8 +16,8 @@ module top_tb;
  wire[7:0] w_rx_byte;
  
  
- parameter CLKS_PER_BIT = 87;
- parameter CLOCK_PERIOD_NS = 100;
+ parameter CLKS_PER_BIT = 868;
+ parameter CLOCK_PERIOD_NS = 10;
  parameter BIT_PERIOD = CLKS_PER_BIT * CLOCK_PERIOD_NS;
  
  

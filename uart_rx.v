@@ -1,5 +1,5 @@
 module uart_rx
-#(parameter CLKS_PER_BIT = 87)
+	#(parameter CLKS_PER_BIT = 868)
 (
 input i_clk,
 input i_Rx_Serial,
@@ -18,7 +18,7 @@ reg r_Rx_Data_R = 1'b1;
 reg r_Rx_Data = 1'b1;
 
 reg[7:0] r_Rx_Byte = 0;
-reg[7:0] r_Clock_Count = 0;
+	reg[9:0] r_Clock_Count = 0;
 reg[2:0] r_Bit_Index = 0;
 reg[2:0] r_SM_Main = 0;
 reg r_Rx_DV = 0;

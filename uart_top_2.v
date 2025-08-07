@@ -32,7 +32,7 @@ module uart_top_2(
     output o_tx_active_led
     );
     
-    parameter CLKS_PER_BIT = 87;
+    parameter CLKS_PER_BIT = 868;
     
     
         wire[7:0] rx_byte;
